@@ -3,7 +3,7 @@
 #include "TankAIController.h"
 #include "Runtime/Engine/Classes/GameFramework/Actor.h"
 
-void ATankAIController::BeginPlay()
+void ATankAIController::BeginPlay()//the AI controller doesnt take control of the player tank as we have specified in game mode that the player controller class is PlayerController
 {
 	Super::BeginPlay();
 	auto PlayerTank = GetPlayerTank();
